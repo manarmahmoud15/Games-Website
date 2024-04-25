@@ -1,0 +1,78 @@
+*
+{
+    box-sizing: border-box;
+}
+body {
+
+    background: #27292a;
+}
+
+#main {
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #ec6090;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    flex-wrap: wrap;
+}
+
+.card {
+    float: left;
+    background: url("img/cloud.png");
+    margin: 2vw;
+    cursor: pointer;
+}
+
+img {
+    opacity: 0;
+}
+
+/* section {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    flex-wrap: wrap;
+} */
+
+.gameContainer {
+    width: 80%;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 2.5vw;
+    font-style: oblique;
+    color: #ec6090;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        margin: 3vw;
+    }#main{
+        width: 100%;
+    }
+    h1 {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        margin: 4vw;
+    }
+    #main{
+        width: 100%;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+}

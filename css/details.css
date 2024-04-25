@@ -1,0 +1,283 @@
+:root {
+    --main-color: #ec6090;
+    --white-color: #fff;
+    --main-bg: #1f2122;
+    --section-bg: #27292a;
+    --font-color: #666;
+    --main-transition: .35s;
+    --main-radius: 23px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--white-color);
+}
+html {
+    scroll-behavior: smooth;
+}
+.container{
+    background-color: var(--section-bg);
+}
+::selection {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.form-control{
+/* text-align: center; */
+border-radius: 15px;
+background-color:var(--section-bg);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+}
+.heading-section h2 {
+    color: var(--main-color);
+    font-size: 2rem;
+    /* font-weight: 700; */
+}
+.heading-section h2 span {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+/* navbar */
+nav{
+    border-radius: var(--main-radius);
+}
+.myNav{
+    transition: background-color 0.1s ease, border 0.3s ease;
+
+}
+.myNav:hover{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: var(--main-radius); 
+}
+/* fontawsome */
+.fa-star{
+    color:yellow;
+}
+.fa-download{
+    color: var(--main-color);
+}
+
+h6{
+    color: #666; 
+}
+
+/* p */
+p {
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--font-color);
+    /* margin: 0; */
+    text-align: center;
+}
+p a {
+    color: #ccc;
+    transition: var(--main-transition);
+}
+p a:hover {
+    color: #F99;
+}
+
+
+footer{
+    background-color: var(--main-bg) !important;
+
+}
+footer .fa-brands{
+    font-size: 20px;
+    margin-left: 7px;
+    color:var(--main-color);
+    cursor: pointer;
+}
+
+.myrow{
+    justify-content: space-around;
+    height: auto;
+}
+a i.fa-play{
+    color:var(--main-color) !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-23px, -23px);
+    width: 46px;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+}
+.radius{
+    border-radius: 23px !important;
+}
+@media (max-width: 768px) {
+    .left{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 100%;
+     }
+     .right{
+        width: 100%;
+        margin-bottom: 10px;
+     }
+}
+.row{
+    text-align: center;
+}
+.FORTNITE{
+  
+    font-weight: 600;
+}
+/* game details */
+.game-details {
+    background-color: var(--main-bg);
+    border-radius: var(--main-radius);
+   margin-bottom: 50px !important;
+   
+}
+
+.left-info,
+.right-info {
+    background-color: var(--section-bg);
+    padding: 20px;
+    border-radius: var(--main-radius);
+    margin-bottom: 20px;
+}
+
+.game-details .content .left-info .left h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.game-details .content .left-info .left span {
+    font-size: 16px;
+    margin-top: 7px;
+    font-weight: 400;
+    display: block;
+    color: var(--font-color);
+}
+
+.game-details .content .left-info ul li {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 5px;
+    list-style: none;
+   
+}
+
+.game-details .content ul li svg {
+    margin-bottom: -3px;
+    margin-right: 5px;
+    vertical-align: middle;
+   
+}
+
+.game-details .content ul li:first-of-type svg {
+    color: yellow;
+}
+
+.game-details .content .right-info ul li {
+    width: calc(25% - 20px);
+    font-size: 14px;
+    text-align: center;
+    float: left;
+}
+
+.game-details .content img {
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 8px;
+  
+}
+
+.game-details .content .main-border-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-border-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.main-border-button a:hover{
+    border: none;
+    background-color:var(--white-color);
+}
+
+
+.left-info,
+.right-info {
+    background-color: var(--section-bg);
+    border-radius: var(--main-radius);
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.right-info{
+    width: 100%;
+    padding: 40px;
+    /* margin: 30px; */
+    text-align: center;
+}
+/* /other games */
+.other-games{
+    background-color: var(--main-bg);
+    border-radius: var(--main-radius);
+}
+.other-games .item {
+    margin-bottom: 30px;
+    padding-bottom: 52px;
+    border-bottom: 1px solid var(--section-bg);
+    position: relative;
+}
+.other-games .item img {
+    margin-right: 15px;
+    max-width: 80px;
+    float: left;
+ 
+}
+.other-games .item h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 0 6px;
+    display: inline-block;
+}
+.other-games .item span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color);
+    display: block;
+}
+.other-games .item ul {
+    top: 15px;
+    list-style: none;
+    
+}
+.empty hr{
+    background-color: var(--section-bg);
+}
+img:hover{
+    cursor: pointer;
+    background-color:#ec6090;
+    transition: color  1s ease 0s ;
+}

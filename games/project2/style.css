@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ec6090;
+}
+
+::selection {
+    color: #fff;
+    background-color: #ec6090;
+}
+
+.container {
+    padding: 2rem 7rem;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.resultImages {
+    display: flex;
+    column-gap: 7rem;
+}
+
+.container.start .userResult {
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.container.start .cpuResult {
+    transform-origin: right;
+    animation: cpuShake 0.7s ease infinite;
+}
+
+@keyframes cpuShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.resultImages img {
+    width: 100px;
+}
+
+.userResult img {
+    transform: rotate(90deg);
+}
+
+.cpuResult img {
+    transform: rotate(-90deg) rotateY(180deg);
+}
+
+.result {
+    text-align: center;
+    font-size: 2rem;
+    color: #ec6090;
+    margin-top: 1.5rem;
+}
+
+.optionImage img {
+    width: 50px;
+}
+
+.optionImages {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+}
+
+.optionImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.optionImage:hover {
+    opacity: 1;
+}
+
+.optionImage.active {
+    opacity: 1;
+}
+
+.optionImage img {
+    pointer-events: none;
+}
+
+.optionImage p {
+    color: #ec6090;
+    font-size: 1.235rem;
+    margin-top: 1rem;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .resultImages {
+        column-gap: 1rem;
+    }
+
+    .optionImages {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        width: 100%;
+    }
+    .resultImages {
+        column-gap: 1rem;
+    }
+    .optionImages {
+        margin-top: 1rem;
+    }
+    .resultImages {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        column-gap: 5rem;
+    }
+    .optionImage img {
+        width: 30px;
+    }
+    .result {
+        font-size: 1.75rem; 
+        margin-top: 1.5rem; 
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .resultImages {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        column-gap: 5rem;
+    }
+    .optionImage img {
+        width: 20px; 
+    }
+    .result {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
